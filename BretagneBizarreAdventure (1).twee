@@ -96,7 +96,7 @@ Vous regarder votre boite mail et ouvrez un mail d'un certain G.Pichon.
 ]
 
 
-:: FicheCulte {"position":"1175,150","size":"100,100"}
+:: FicheCulte {"position":"1200,200","size":"100,100"}
 Les “Veilleurs de l’Abîme” sont mentionnés dans plusieurs forums obscurs sur le paranormal et dans de vieux fils archivés de discussions entre marins. Les messages se contredisent, mais quelques constantes ressortent.
 
 On trouve des allusions à :
@@ -150,6 +150,10 @@ La derniere position connue de X est le phare du port de la houle
 (live:3.5s)[(go-to: "ReserverBilletTrain1")]
 
 
+:: Pisse {"position":"1525,550","size":"100,100"}
+ce logiciel est super j'adore :/
+
+
 :: PlusTard {"position":"900,600","size":"100,100"}
 (align:"=><=")+(box:"=XXX=")[Vous laissez le téléphone vibrer jusqu’à ce que la sonnerie se coupe dans un silence brutal.
 (live:1s)[L’écran s’éteint, mais la mention “Bretagne” reste accrochée dans un coin de votre esprit.]
@@ -179,6 +183,10 @@ Code postal de la destination : (input: bind _password)
 Mauvaise destination ! [(go-to: "MauvaiseDestination1")]
 ]
 ]
+
+
+:: Test {"position":"1375,600","size":"100,100"}
+Mange caca
 
 
 :: Tips {"position":"600,400","size":"100,100"}
