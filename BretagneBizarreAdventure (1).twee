@@ -69,7 +69,6 @@ Officiellement, c’est une disparition inquiétante. Officieusement… disons q
 (live:6s)[[[Consulter les mails|Computer00]]]
 
 
-
 :: CallA001 {"position":"1900,400","size":"100,100"}
 Téléphone qui sonne 
 
@@ -98,13 +97,47 @@ Vous regarder votre boite mail et ouvrez un mail d'un certain G.Pichon.
 
 
 :: FicheCulte {"position":"1300,200","size":"100,100"}
+Les “Veilleurs de l’Abîme” sont mentionnés dans plusieurs forums obscurs sur le paranormal et dans de vieux fils archivés de discussions entre marins. Les messages se contredisent, mais quelques constantes ressortent.
 
+On trouve des allusions à :
+– Un chant au bord des falaises, à marée montante.
+Certains témoins parlent d’un chœur lointain, d’autres d’une seule voix impossible à situer, “comme si la mer elle-même prenait une respiration”.
+– Des symboles spirales gravés sur la pierre.
+Les spirales sont parfois décrites comme approximatives, parfois au contraire d’une régularité maniaque, toujours alignées vers la mer.
+– Un lieu appelé “La Fenêtre sur l’Eau”, peut‑être un surnom pour un phare, une crique ou un replat rocheux submergé à marée haute.
+Les rares descriptions parlent d’un endroit où “la mer regarde en retour”.
+
+Certains messages plus anciens, mal formatés, évoquent “un témoin choisi” et “une lumière qui n’appartient pas au ciel”. D’autres insistent sur l’idée que les Veilleurs “ne prient pas pour que quelque chose vienne, mais pour que quelque chose ne reparte pas”.
+
+En marge, une petite note de Xavier, intégrée à la page :
+“Ce culte n’a pas de centre connu, pas de chef identifié. Juste des fragments. Comme une rumeur qui aurait appris à survivre d’elle-même.”
+
+En bas de page, un rappel :
+Pour progresser, il peut être utile de rechercher sur internet “Port de la Houle Bretagne code postal”.
+Une mention ajoute : “Vérifier également la commune associée. Les légendes aiment les détails précis.”
+
+[[Revenir au briefing|Briefing]]
 
 
 :: FichePhare {"position":"1400,200","size":"100,100"}
 <img src = https://github.com/Felicorne/BretagneBizarreLegends/blob/main/IMG/ImagePhare_1.png?raw=true \>
  En marge de l’image, Xavier a noté :
 “Ce n’est pas juste un phare. C’est un repère. Pour eux, et pour… autre chose.”
+
+
+
+Le phare du Port de la Houle surplombe un petit port de pêche, coincé entre les quais, les cafés et la ligne instable de la marée. À marée basse, la mer se retire si loin que le paysage ressemble à une cicatrice ouverte dans la vase. À marée haute, l’eau vient frapper les pierres sous la jetée.
+
+On raconte que certains soirs, la lumière du phare clignote selon un motif étrange, comme un code qui ne figure sur aucune carte maritime. Les anciens parlent d’un “signal qui ne s’adresse pas aux bateaux”, mais à “ce qui sait lire dans l’eau”.
+
+Un encadré signale :
+Localisation : Port de la Houle, Cancale (Ille-et-Vilaine).
+La carte zoomée montre le phare tout au bout du quai, comme un point final posé sur la côte.
+
+Un lien supplémentaire :
+[[Consulter les rapports de gendarmerie|RapportsLocaux]]
+
+[[Revenir au briefing|Briefing]]
 
 
 :: FicheXavier {"position":"1500,200","size":"100,100"}
@@ -130,6 +163,10 @@ La derniere position connue de X est le phare du port de la houle
 :: PlusTard1 {"position":"1900,200","size":"100,100"}
 <h1>Rien de ne se passe</h1> 
 (live:2.5s)[(go-to: "CallA001")]
+
+
+:: RapportsLocaux {"position":"1400,25","size":"100,100"}
+
 
 
 :: ReserverBilletTrain1 {"position":"2100,600","size":"100,100"}
