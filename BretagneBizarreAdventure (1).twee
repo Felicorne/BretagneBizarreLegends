@@ -29,12 +29,30 @@ Sur l’écran : “Numéro masqué – Bretagne”.
 (text-colour:black)+(bg:green)[[[Repondre|Briefing]]]  |  (text-colour:black)+(bg:red)[[[Ignorer l’appel|PlusTard]]] ]
 
 
+:: ArriveEnBretagne {"position":"1537.5,525","size":"100,100"}
+
+
+
 :: ArriveSurPlace1 {"position":"2100,400","size":"100,100"}
 Coucou
 
 
 :: BilletTrain {"position":"1600,400","size":"100,100"}
+Texte :
+“Entrez le code postal de la commune du Port de la Houle (indice : recherchez la localisation du Port de la Houle sur internet).”
 
+En surimpression, une petite fenêtre rappelle :
+Port de la Houle – Cancale – Ille‑et‑Vilaine.
+Une note griffonnée de Xavier réapparaît en coin : “Les coordonnées, toujours les coordonnées. On croit que ça nous ancre dans le réel.”
+
+Champ texte (comme dans ton Twine) :
+Code postal : (input)
+
+Si le joueur entre le bon code (par exemple 35260, comme dans ton prototype), il peut :
+[[Prendre le train pour la Bretagne|ArriveEnBretagne]]
+
+Si le code est incorrect :
+[[Mauvaise destination|MauvaiseDestination]]
 
 
 :: Briefing {"position":"1000,400","size":"100,100"}
@@ -96,7 +114,7 @@ Vous regarder votre boite mail et ouvrez un mail d'un certain G.Pichon.
 ]
 
 
-:: FicheCulte {"position":"1175,150","size":"100,100"}
+:: FicheCulte {"position":"1300,200","size":"100,100"}
 Les “Veilleurs de l’Abîme” sont mentionnés dans plusieurs forums obscurs sur le paranormal et dans de vieux fils archivés de discussions entre marins. Les messages se contredisent, mais quelques constantes ressortent.
 
 On trouve des allusions à :
@@ -142,6 +160,10 @@ Un lien supplémentaire :
 
 :: FicheXavier {"position":"1500,200","size":"100,100"}
 “Vous travaillez avec Xavier depuis 3 ans. C’est lui qui vous a parlé, la première fois, des affaires qu’on ne referme jamais vraiment.”
+
+
+:: MauvaiseDestination {"position":"1662.5,525","size":"100,100"}
+
 
 
 :: MauvaiseDestination1 {"position":"2200,600","size":"100,100"}
