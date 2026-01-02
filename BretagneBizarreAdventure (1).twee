@@ -1,0 +1,150 @@
+:: StoryTitle
+BretagneBizarreAdventure
+
+
+:: StoryData
+{
+  "ifid": "1A9E1519-56E8-49E9-9E3B-EC2E93002CD8",
+  "format": "Harlowe",
+  "format-version": "3.3.9",
+  "start": "EcranAcceuil",
+  "zoom": 1
+}
+
+
+:: Appel {"position":"1900,600","size":"100,100"}
+Mise en contexte 
+"bliblibli"
+"blablabla"
+"blébléblé"
+la derniere fois qu'on a vu X il était au phare du port de la houle
+
+(live:3.5s)[(go-to: "ReserverBilletTrain1")]
+
+
+:: AppelTel {"position":"800,400","size":"100,100"}
+(align:"=><=")+(box:"=XXX=")[//Votre téléphone vibre sur la table, un tremblement sec qui résonne dans la pièce silencieuse.//
+//L’écran éclaire brièvement les dossiers étalés, les notes griffonnées à la hâte, les photos collées au mur.//
+Sur l’écran : “Numéro masqué – Bretagne”.
+(text-colour:black)+(bg:green)[[[Repondre|Briefing]]]  |  (text-colour:black)+(bg:red)[[[Ignorer l’appel|PlusTard]]] ]
+
+
+:: ArriveSurPlace1 {"position":"2100,400","size":"100,100"}
+Coucou
+
+
+:: BilletTrain {"position":"1600,400","size":"100,100"}
+
+
+
+:: Briefing {"position":"1000,400","size":"100,100"}
+"Bonjour Gabriel Dider à l'appareil"
+
+(live: 1s)[Une voix tendue, légèrement couverte par le vent et un bruit de vagues perce la ligne. Des craquements parasites rappellent les vieux postes radio des chalutiers.]
+
+(live: 2s)[« Ici le commandant Pichon, gendarmerie maritime de Saint-Malo.
+Je vais être direct : votre collègue, Xavier Lenoir, a disparu. Il a été vu pour la dernière fois près du phare du Port de la Houle, à Cancale, en Ille‑et‑Vilaine. La mer était montée, la nuit tombait. Depuis, plus rien. »]
+
+(live:4s)[Une rafale de vent couvre quelques mots, avant qu’il reprenne, plus bas, plus grave.]
+
+(live:5s)[« Avant de disparaître, il parlait des “Veilleurs de l’Abîme”. Est-ce que ce nom vous dit quelque chose ? On a retrouvé dans ses affaires quelques notes confuses et des croquis.
+S’il avait des documents chez vous, ou dans vos dossiers, il faudrait que vous les consultiez. Vite. »]
+
+(live:6s)[[[Suite|Briefing2]]]
+
+
+:: Briefing2 {"position":"1200,400","size":"100,100"}
+Un silence pesant, juste le ressac en arrière-plan.
+
+(live:1s)[« Nous voudrions aussi que vous veniez sur place pour reprendre son enquête.
+Je ne vais pas vous mentir : ici, les gens parlent. Disparitions, rituels, histoires de marins qui ne reviennent pas.
+Officiellement, c’est une disparition inquiétante. Officieusement… disons que certains, dans le coin, sont persuadés que la mer sait garder ce qu’elle prend. »]
+
+(live:3s)[Le ton se fait plus sec, administratif, comme pour reprendre le contrôle]
+
+(live:4s)[« Je vous envoie par mail ce que nous avons. D’ici là, fouillez ce que vous pouvez sur Xavier, sur ces “Veilleurs de l’Abîme”, et sur le phare du Port de la Houle. Le reste, il faudra venir le chercher sur place. »]
+
+(live:5s)[L’appel se termine sur un dernier grondement de vent, comme un souffle qui se retire du combiné.]
+
+(live:6s)[[[Consulter les mails|Computer00]]]
+
+
+
+:: CallA001 {"position":"1900,400","size":"100,100"}
+Téléphone qui sonne 
+
+[[Répondre|Appel]]
+[[Refuser|PlusTard1]]
+
+
+:: Computer00 {"position":"1400,400","size":"100,100"}
+(set: $documentsSeen to false)
+Vous regarder votre boite mail et ouvrez un mail d'un certain G.Pichon.
+ Cet email contient un texte et trois pieces jointes
+ 
+[[Dossier Xavier Lenoir|FicheXavier]]
+[[Le culte des Veilleurs de l’Abîme|FicheCulte]]
+[[Le phare du Port de la Houle|FichePhare]]
+[[Préparer le départ|BilletTrain]]
+
+
+:: EcranAcceuil {"position":"400,400","size":"100,100"}
+(align:"=><=")+(box:"=XXX=")[(live:0.5s)[<h1>Bretagne's Bizarre Legends </h1>]
+(live:1s)[Produit par  Erwan Berthaud et Félix Balasakis]
+
+
+(live:1.5s)[[[Commencer|Tips]]]
+]
+
+
+:: FicheCulte {"position":"1300,200","size":"100,100"}
+
+
+
+:: FichePhare {"position":"1400,200","size":"100,100"}
+<img src = https://github.com/Felicorne/BretagneBizarreLegends/blob/main/IMG/ImagePhare_1.png?raw=true \>
+ En marge de l’image, Xavier a noté :
+“Ce n’est pas juste un phare. C’est un repère. Pour eux, et pour… autre chose.”
+
+
+:: FicheXavier {"position":"1500,200","size":"100,100"}
+
+
+
+:: MauvaiseDestination1 {"position":"2200,600","size":"100,100"}
+<h1>Mauvaise destination</h1>
+La derniere position connue de X est le phare du port de la houle
+(live:3.5s)[(go-to: "ReserverBilletTrain1")]
+
+
+:: PlusTard {"position":"900,600","size":"100,100"}
+(align:"=><=")+(box:"=XXX=")[Vous laissez le téléphone vibrer jusqu’à ce que la sonnerie se coupe dans un silence brutal.
+(live:1s)[L’écran s’éteint, mais la mention “Bretagne” reste accrochée dans un coin de votre esprit.]
+(live:2s)[Vous tentez de reprendre votre travail, mais vos yeux reviennent toujours vers le téléphone noir posé au bout du bureau.]
+(live: 4s)[Au bout de quelques secondes, une notification lumineuse rompt l’obscurité :]
+(live: 5s)[“1 nouveau message vocal – Numéro masqué”.]
+(live: 5.5s)[[[Écouter le message et rappeler|Briefing]]]
+]
+
+
+:: PlusTard1 {"position":"1900,200","size":"100,100"}
+<h1>Rien de ne se passe</h1> 
+(live:2.5s)[(go-to: "CallA001")]
+
+
+:: ReserverBilletTrain1 {"position":"2100,600","size":"100,100"}
+Code postal de la destination : (input: bind _password)
+(link-replace: "Submit")[
+(if: _password is "35260")[
+[[Aller au phare de la fenetre->ArriveSurPlace1]]
+]
+(if: _password is not "35260")[
+Mauvaise destination ! [(go-to: "MauvaiseDestination1")]
+]
+]
+
+
+:: Tips {"position":"600,400","size":"100,100"}
+(align:"=><=")+(box:"=XXX=")[(live:0.5s)[Certaines informations devront être recherchées sur internet (lieux, codes postaux, légendes locales…)]]
+
+(live:4s)[(go-to: "AppelTel")]
